@@ -131,7 +131,7 @@ const Navbar = () => {
             </div>
             ))}
           </div>
-          <div className="w-full flex justify-between items-end">
+          <div className="w-full flex justify-between items-end mb-40 sm:mb-0">
               <div className="flex flex-col gap-1">
                   {socialMediaNavbar?.map((social,index)=>(
                     <Link key={index} className="flex items-center" href={social?.url} target="_blank">
