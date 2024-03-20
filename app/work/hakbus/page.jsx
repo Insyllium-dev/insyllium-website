@@ -43,7 +43,7 @@ const HakbusPage = () => {
           <p className="font-normal text-transparent bg-clip-text bg-gradient-to-br from-neutral-300 from-30% to-cyan-300/40 text-xl md:text-2xl font-poppins">About project</p>
           <div className="space-y-8">
             <p className="font-normal text-transparent bg-clip-text bg-gradient-to-br from-neutral-300 from-30% to-cyan-300/40 text-2xl md:text-3xl font-poppins">Hakbus is an innovative project aimed at revolutionizing transportation.</p>
-            <p className="font-normal text-neutral-300 text-xl font-poppins">Through meticulous UI/UX design, we've created an intuitive platform for Hakbus users. By focusing on user needs and behaviors, we've optimized every aspect of the journey, ensuring seamless booking and efficient route suggestions. Our user-centric approach sets a new standard for transportation services.</p>
+            <p className="font-normal text-neutral-300 text-xl font-poppins">Through meticulous UI/UX design, we&apos;ve created an intuitive platform for Hakbus users. By focusing on user needs and behaviors, we&apos;ve optimized every aspect of the journey, ensuring seamless booking and efficient route suggestions. Our user-centric approach sets a new standard for transportation services.</p>
         </div>
 
         </div>
