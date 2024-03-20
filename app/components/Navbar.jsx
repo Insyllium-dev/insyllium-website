@@ -8,6 +8,7 @@ import Link from "next/link";
 import { whitelogo, darklogo } from "../../public";
 import { motion } from "framer-motion";
 import { socialMediaNavbar } from "../utils/data";
+import { usePathname } from "next/navigation";
 
 
 const links = [
@@ -39,11 +40,15 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [scrolledWhite, setScrolledWhite] = useState(false);
 
+  const pathName = usePathname()
+
+  
+  
   const handleScroll = () => {
     const scrollY = window.scrollY;
     setScrolled(scrollY > 50);
     // setScrolledWhite(scrollY > 2.5 * window.innerHeight);
-    if(scrollY > 2.5 * window.innerHeight && scrollY < 6.4 * window.innerHeight){
+    if(scrollY > 2.5 * window.innerHeight && scrollY < 6.4 * window.innerHeight && pathName==='/'){
       setScrolledWhite(true)
     }else {
       setScrolledWhite(false)

@@ -8,28 +8,28 @@ export const services = [
     name: 'Mobile Apps',
     description:
       'Crafting innovative mobile applications tailored to your needs. From iOS to Android, we bring your ideas to life on every platform.',
-    icon: '',
+    icon: '/mobileServiceBG.svg',
     url:'',
   },
   {
     name: 'Web Apps',
     description:
       'Building robust web applications that engage users and drive results. Our solutions are scalable, secure, and user-friendly.',
-    icon: '',
+    icon: '/webServiceBG.svg',
     url:'',
   },
   {
     name: 'Graphic Design',
     description:
       'Designing captivating visuals that communicate your brand message effectively. From logos to marketing materials, we make your brand stand out.',
-    icon: '',
+    icon: 'graphicDesignBG.svg',
     url:'',
   },
   {
     name: 'Branding',
     description:
       'Creating unique brand identities that resonate with your audience. We develop comprehensive branding strategies to elevate your business.',
-    icon: '',
+    icon: 'brandingBG.svg',
     url:'',
   },
 ];
@@ -57,27 +57,75 @@ export const achievemnts = [
 export const projects = [
   {
       name: "Hak Bus",
-      // url: "/work/hakbus",
-      url:'https://www.hakbus.net',
+      url: "/work/hakbus",
+      // url:'https://www.hakbus.net',
       description: "Hakbus is an online platform that allows users to conveniently book bus tickets from the comfort of their homes. Experience seamless ticket booking and travel planning through this user-friendly website.",
-      image: '/img5_.jpg',
+      image: '/hakbusbg.webp',
       tech:['Web Design','Development','Mobile App']
   },
   {
       name: "Insylink",
-      // url: "/work/insylink",
-      url:'https://www.insylink.com',
+      url: "/work/insylink",
+      // url:'https://www.insylink.com',
       description: "Insylink is a point-of-sale (POS) system designed specifically for restaurants, streamlining operations and enhancing customer service. Manage orders, track inventory, and analyze sales data efficiently with this versatile solution.",
-      image: '/img4_.jpg',
+      image: '/insylinkbg.webp',
       tech:['Branding','Web Design','Development','Mobile App']
   },
   {
       name: "Lans-Gr",
-      // url: "/work/lans-gr",
-      url:'https://www.lans-gr.com',
+      url: "/work/lans",
+      // url:'https://www.lans-gr.com',
       description: "Lans-Gr specializes in crafting high-quality shutters for homes and businesses. Our website showcases our extensive range of shutter options, allowing customers to find the perfect fit for their spaces with ease.",
-      image: '/lansmockup.jpg',
+      image: '/lansbg.webp',
       tech:['Branding','Web Design','Development']
+  },
+]
+
+export const projectTemplates = [
+  {
+      name: "Hak Bus",
+      url: "/work/hakbus",
+      website:'https://www.hakbus.net',
+      aboutTitle: "Hakbus is an innovative project aimed at revolutionizing transportation.",
+      aboutDesc: "Through meticulous UI/UX design, we've created an intuitive platform for Hakbus users. By focusing on user needs and behaviors, we've optimized every aspect of the journey, ensuring seamless booking and efficient route suggestions. Our user-centric approach sets a new standard for transportation services.",
+      missionTitle: "Hakbus's mission is to redefine the transportation experience.",
+      missionDesc: "We are dedicated to providing sustainable, efficient, and accessible transportation solutions. Through innovation and collaboration, we aim to create a future where commuting is seamless, enjoyable, and environmentally friendly. Our commitment to excellence drives us to continuously improve and adapt to meet the evolving needs of our passengers and communities.",
+      image: '/hakbusimage.webp',
+      tabletImage:'/hakbustablet.png',
+      phoneImage:'/hakbusphone.png',
+      imageCollection:'',
+      year:'2022',
+      expertise:'UI/UX Design, Development',
+  },
+  {
+      name: "Insylink",
+      url: "/work/insylink",
+      website:'https://www.insylink.com',
+      aboutTitle: "Insylink - Streamlining Restaurant Operations",
+      aboutDesc: "Insylink is a point-of-sale (POS) system designed specifically for restaurants, streamlining operations and enhancing customer service. Manage orders, track inventory, and analyze sales data efficiently with this versatile solution.",
+      missionTitle: "Empowering Restaurants with Efficient POS Solutions",
+      missionDesc: "Insylink is committed to providing restaurants with powerful POS solutions that enhance efficiency and customer satisfaction. Our mission is to streamline restaurant operations, from order management to inventory tracking, enabling businesses to thrive in a competitive industry.",
+      image: '/insylinkbg.webp',
+      tabletImage:'',
+      phoneImage:'/insylinkphone.png',
+      imageCollection:'',
+      year:'2022',
+      expertise:'UI/UX Design, Development',
+  },
+  {
+      name: "Lans-Gr",
+      url: "/work/lans-gr",
+      website:'https://www.lans-gr.com',
+      aboutTitle: "Lans-Gr - Crafting High-Quality Shutters",
+      aboutDesc: "Lans-Gr specializes in crafting high-quality shutters for homes and businesses. Our website showcases our extensive range of shutter options, allowing customers to find the perfect fit for their spaces with ease.",
+      missionTitle: "Providing Premium Shutter Solutions",
+      missionDesc: "At Lans-Gr, our mission is to provide premium shutter solutions for homes and businesses. With a focus on quality craftsmanship and customer satisfaction, we strive to exceed expectations and enhance the aesthetic appeal and functionality of every space.",
+      image: '/lansbg.webp',
+      tabletImage:'/lanstablet.png',
+      phoneImage:'/lansphone.png',
+      imageCollection:'',
+      year:'2022',
+      expertise:'UI/UX Design, Development',
   },
 ]
 

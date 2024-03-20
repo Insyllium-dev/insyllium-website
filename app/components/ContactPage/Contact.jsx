@@ -35,7 +35,7 @@ const Contact = () => {
     <div className="px-4 sm:px-8 md:px-12 lg:px-20 xl:px-40 2xl:px-[20rem] py-[100px]">
         <div className="flex flex-col gap-6 md:gap-10">
             <h1 className="text-white font-poppins font-semibold text-3xl md:text-4xl lg:text-5xl xl:text-6xl">Hi there! <br/> You got a project in mind?</h1>
-            <p className="text-white font-poppins font-medium text-lg md:text-xl">Please get in touch with our team. You can send a message to <a href="mailto:insyllium@gmail.com" className="text-[#00b2d1] underline">insyllium@gmail.com</a></p>
+            <p className="text-white font-poppins font-medium text-lg md:text-xl">Please get in touch with our team. You can send a message to <a href="mailto:insyllium@gmail.com" className="text-[#00b2d1]">insyllium@gmail.com</a></p>
             <form 
             onSubmit={sendEmail}
             ref={form}>

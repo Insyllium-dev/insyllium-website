@@ -31,7 +31,7 @@ const texture_1 = useLoader(TextureLoader,img)
           <mesh material={materials['matte.001']} geometry={nodes['Cube008_1'].geometry} />
           {/* <mesh material={materials['screen.001']} geometry={nodes['Cube008_2'].geometry} /> */}
           <mesh material={materials['screen.001']} geometry={nodes['Cube008_2'].geometry}>
-          <meshBasicMaterial map={texture_1} />
+          <meshStandardMaterial map={texture_1} />
           </mesh>
 
         </group>
@@ -48,11 +48,22 @@ const texture_1 = useLoader(TextureLoader,img)
 
 const Laptop = ({img}) => {
   const [open, setOpen] = useState(true)
+  const [isPhone,setIsPhone] = useState(false)
   const props = useSpring({ open: Number(open) })
+
+  useEffect(()=>{
+    if(window.innerWidth>500){
+      setIsPhone(false)
+    }
+    else {
+      setIsPhone(true)
+    }
+  },[])
+
   return (
     <web.main style={{ background: 'transparent',position:'absolute'}}>
-      <Canvas dpr={[1, 2]} camera={{ position: [0, 0, -30], fov: 35 }} style={{width:'500px',height:'500px'}}>
-        <three.pointLight position={[10, 10, 10]} intensity={1.5} color={props.open.to([0, 1], ['#f0f0f0', '#d25578'])} />
+      <Canvas dpr={[1, 2]} camera={{ position: [0, 0, -30], fov: 35 }} style={{width:!isPhone?'500px':'400px',height:!isPhone?'500px':'400px'}}>
+        <three.pointLight position={[10, 10, 10]} intensity={1} color={props.open.to([0, 1], ['#f0f0f0', '#d25578'])} />
         <Suspense fallback={null}>
           <group rotation={[0, Math.PI, 0]} onClick={(e) => (e.stopPropagation(), setOpen(!open))}>
             <Model open={open} hinge={props.open.to([0, 1], [1.575, -0.425])} img={img}/>
