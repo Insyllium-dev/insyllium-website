@@ -12,7 +12,7 @@ const OpenSans = Open_Sans({
 
 export const metadata = {
   title: "Insyllium",
-  description: "Software development",
+  description: "At Insyllium, we take pride in crafting innovative solutions that empower businesses to thrive in the digital era. Our Services Section showcases the cutting-edge capabilities and unique offerings that set us apart from the rest.",
 };
 
 export default function RootLayout({ children }) {

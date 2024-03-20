@@ -5,19 +5,6 @@ import Link from "next/link";
 import { footerLinks, socialMedia } from "../utils/data";
 
 const Footer = () => {
-  // const fadeInAnimationVariants = {
-  //   initial: {
-  //     opacity:0,
-  //     y:100,
-  //   },
-  //   animate: (index)=> ({
-  //     opacity:1,
-  //     y:0,
-  //     tansition: {
-  //       delay:0.05*index,
-  //     }
-  //   })
-  // }
 
   return (
     <section
