@@ -57,21 +57,24 @@ export const achievemnts = [
 export const projects = [
   {
       name: "Hak Bus",
-      url: "/work/hakbus",
+      // url: "/work/hakbus",
+      url:'https://www.hakbus.net',
       description: "Hakbus is an online platform that allows users to conveniently book bus tickets from the comfort of their homes. Experience seamless ticket booking and travel planning through this user-friendly website.",
       image: '/img5_.jpg',
       tech:['Web Design','Development','Mobile App']
   },
   {
       name: "Insylink",
-      url: "/work/insylink",
+      // url: "/work/insylink",
+      url:'https://www.insylink.com',
       description: "Insylink is a point-of-sale (POS) system designed specifically for restaurants, streamlining operations and enhancing customer service. Manage orders, track inventory, and analyze sales data efficiently with this versatile solution.",
       image: '/img4_.jpg',
       tech:['Branding','Web Design','Development','Mobile App']
   },
   {
       name: "Lans-Gr",
-      url: "/work/lans-gr",
+      // url: "/work/lans-gr",
+      url:'https://www.lans-gr.com',
       description: "Lans-Gr specializes in crafting high-quality shutters for homes and businesses. Our website showcases our extensive range of shutter options, allowing customers to find the perfect fit for their spaces with ease.",
       image: '/lansmockup.jpg',
       tech:['Branding','Web Design','Development']

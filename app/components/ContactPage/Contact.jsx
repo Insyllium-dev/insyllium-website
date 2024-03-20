@@ -57,7 +57,7 @@ const Contact = () => {
                 <textarea type="text" className="border-b focus:border-b-[#00b2d1]  bg-transparent text-white font-medium font-poppins text-lg outline-none resize-none" rows={2} name="user__message"/>
                 </div>
             </div>
-            <div className="flex justify-between items-baseline w-full">
+            <div className="flex flex-col gap-6 sm:flex-row justify-between items-baseline w-full">
                 <div className="flex items-center gap-2">
                     <input type="checkbox" className="accent-[#00b2d1] h-4 w-4 cursor-pointer rounded-xl" name="" id="" onChange={()=>setAccepted(!accepted)}/>
                     <p className="text-base font-normal text-gray-300 max-w-3xl mt-5">By submitting this form and making your data available, you expressly consent to its treatment to manage future contacts and responding to requests sent. </p>

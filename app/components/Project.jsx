@@ -11,14 +11,14 @@ const Project = ({project}) => {
             <div className='absolute z-[0] w-[300px] h-[300px] m-auto top-0 right-0 left-0 bottom-0 main__gradient blur-3xl hidden lg:block'/>
               {/* <Image alt="project image" src={project.image} width={400} height={400} className="absolute m-auto top-0 left-0 right-0 bottom-0 rounded-3xl hidden lg:block object-cover"/> */}
               <div className="hidden lg:block -translate-y-[200px] translate-x-[70px]">
-              <Laptop />
+              <Laptop img={project?.image}/>
               </div>
 
             <h1 className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-blue-300 text-5xl md:text-6xl lg:text-[120px] xl:text-[140px] 2xl:text-[170px] whitespace-nowrap trackign-wider text-center max-w-3xl">{project?.name}</h1>
             </div>
             {/* <Image alt="project image" src={project.image} width={400} height={400} className="rounded-3xl block lg:hidden object-cover"/> */}
             <div className="flex justify-center items-start lg:hidden w-full h-full -translate-y-[230px]">
-            <Laptop />
+            <Laptop img={project?.image}/>
             </div>
            <div className="flex flex-col gap-10">
            <p className="text-gray-700 font-medium text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-center max-w-3xl font-poppins">
