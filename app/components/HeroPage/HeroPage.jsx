@@ -57,7 +57,7 @@ const HeroPage = () => {
      <p className="subtitle text-white/70 font-light text-base font-poppins">An agency based in Europe commited to evolve ideas into products. <br/> Meet us, the most passionate people in the industry.</p>
     <div className="button">
     <BigButton url="/contact">
-      Let's connect
+      Let&apos;s connect
      </BigButton>
     </div>
      </div>

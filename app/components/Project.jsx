@@ -22,7 +22,7 @@ const Project = ({project}) => {
             </div>
            <div className="flex flex-col gap-10">
            <p className="text-gray-700 font-medium text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-center max-w-3xl font-poppins">
-              "{project?.description}"
+           &quot;{project?.description}&quot;
             </p>
             <div className="flex flex-wrap justify-center items-center gap-4">
                 {project?.tech?.map((tech,index)=>(

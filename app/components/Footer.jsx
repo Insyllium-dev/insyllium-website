@@ -98,6 +98,7 @@ const Footer = () => {
         <div className="flex flex-row md:mt-0 mt-6">
           {socialMedia.map((social, index) => (
             <Link
+              key={index}
               href={social?.link}
               target="_blank"
               className={`object-contain cursor-pointer ${
