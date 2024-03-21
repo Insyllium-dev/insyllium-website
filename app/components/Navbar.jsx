@@ -26,7 +26,7 @@ const links = [
   },
   {
     title: "Services",
-    url: "/#process",
+    url: "/#services",
   },
   {
     title: "Contact",

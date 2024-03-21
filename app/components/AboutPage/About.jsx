@@ -6,7 +6,7 @@ import { achievemnts } from "../../utils/data";
 const About = () => {
 
     return (
-        <div className="py-[100px] px-4 sm:px-8 md:px-12 lg:px-20 xl:px-40 2xl:px-[20rem]">
+        <div id="about" className="py-[100px] px-4 sm:px-8 md:px-12 lg:px-20 xl:px-40 2xl:px-[20rem]">
             <div className="flex flex-col gap-12 md:gap-20 items-start">
                 <Button url="#">About us</Button>
                 <div className="flex justify-between">

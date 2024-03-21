@@ -17,7 +17,7 @@ const fadeInVariants = {
     opacity:1,
     transition:{
       delay:index,
-      duration:0.5,
+      duration:0.6,
       ease:'easeInOut',
     }
   })
@@ -90,8 +90,8 @@ const WorkTemplate = ({project}) => {
             src={project?.image}
             alt="Proejct image"
             className="w-full h-full object-fill lg:px-20 xl:px-40 2xl:px-[20rem]"
-            width={1000}
-            height={1000}
+            width={1920}
+            height={1080}
           />
         </motion.div>
       </div>
@@ -127,22 +127,22 @@ const WorkTemplate = ({project}) => {
       </div>
       <div className="bg-neutral-500/80 min-h-screen w-full left-1/2 relative -translate-x-1/2">
         <div className="w-full h-screen flex flex-col md:flex-row justify-between items-center lg:px-20 xl:px-40 2xl:px-[20rem]">
-        <div className="w-1/2 h-full flex justify-center items-center">
+        <div className="w-full md:w-1/2 h-full flex justify-center items-center">
         <Image
             src={project?.tabletImage}
             alt="Tablet image"
-            className="object-contain w-full h-full"
-            width={1000}
-            height={1000}
+            className="object-contain w-full h-full scale-[1.15]"
+            width={1920}
+            height={1080}
           />
         </div>
-        <div className="w-1/2 h-full flex justify-center items-center">
+        <div className="w-full md:w-1/2 h-full flex justify-center items-center">
         <Image
             src={project?.phoneImage}
             alt="Phone image"
-            className="object-contain w-full h-full"
-            width={1000}
-            height={1000}
+            className="object-cover w-full h-2/3"
+            width={1920}
+            height={1080}
           />
         </div>
         </div>
@@ -175,8 +175,16 @@ const WorkTemplate = ({project}) => {
         </motion.p>
     </div>
 </div>
-<div className="bg-neutral-500/80 min-h-screen w-full left-1/2 relative -translate-x-1/2">
-        <div className="w-full h-screen flex justify-center items-center"></div>
+<div className="bg-neutral-500/80 md:min-h-screen w-full left-1/2 relative -translate-x-1/2 py-[100px] md:py-0">
+        <div className="w-full flex md:h-screen justify-center items-center">
+        <Image
+            src={project?.imageCollection}
+            alt="Phone image"
+            className="object-contain w-full h-full md:h-2/3"
+            width={1920}
+            height={1080}
+          />
+        </div>
       </div>
       <Contact />
       {/* <div className="flex flex-col md:flex-row gap-12 md:gap-20 lg:gap-40 xl:gap-60 py-[150px] px-4 sm:px-8 md:px-12 lg:px-20 xl:px-40 2xl:px-[20rem]">

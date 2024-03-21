@@ -8,7 +8,7 @@ import Service from '../../components/ui/Service'
 
 const Services = () => {
   return (
-    <div className="px-4 sm:px-8 md:px-12 lg:px-20 xl:px-40 2xl:px-[20rem] py-[100px]">
+    <div id='services' className="px-4 sm:px-8 md:px-12 lg:px-20 xl:px-40 2xl:px-[20rem] py-[100px]">
         <div className="flex flex-col justify-between w-full gap-12">
             <Button url={'#'}>Our services</Button>
             <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
