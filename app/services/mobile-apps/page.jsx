@@ -14,6 +14,7 @@ const MobileApps = () => {
 
   useEffect(() => {
     const lenis = new Lenis();
+    window.scrollTo(0,0)
 
     function raf(time) {
       lenis.raf(time);
