@@ -2,6 +2,72 @@ import { aboutimage, aboutus, insylink,img5_ } from "../../public";
 import { FaLinkedin,FaTwitter,FaFacebook,FaInstagram } from "react-icons/fa";
 import { GoArrowUpRight } from "react-icons/go";
 
+export const pricingPlans = [
+  {
+    price:'1200',
+    name:'Starter',
+    description:'Simple, low complexity.',
+    features:['Up to 7 screens (flexible)','iOS or Android','1 month development time','Play store/App store optimization (ASO)','Database (Price may vary)']
+  },
+  {
+    price:'3350',
+    name:'Professional',
+    description:'Advanced, relatively complex.',
+    features:['Up to 7 screens (flexible)','iOS or Android','1 month development time','Play store/App store optimization (ASO)','Database (Price may vary)']
+  },
+  {
+    price:'???',
+    name:'Custom',
+    description:'You say it, we do it. Tailored for you.',
+    features:['Any amount of screens','iOS and/or Android','As much as needed','Play store/App store optimization (ASO)','Database (Price may vary)','Free support and maintenance for the first year.','Anything else you need or want we can do.']
+  },
+]
+
+
+export const sidebarLinks = [
+  {
+    name: 'Mobile Apps',
+    url:'#mobile-apps',
+  },
+  {
+    name: 'Platforms',
+    url:'#platforms',
+  },
+  {
+    name: 'The process',
+    url:'#the-process',
+  },
+  {
+    name: 'Prices',
+    url:'#prices',
+  },
+  {
+    name: 'What else?',
+    url:'#what-else',
+  },
+  {
+    name: 'Contact',
+    url:'#contact',
+  },
+];
+
+export const mobilePlatforms = [
+  {
+    name: 'iOS apps',
+    desc:'We excel in iOS app development, meticulously crafting customized solutions to perfectly meet your unique needs and business goals.',
+    icon:'/appleIcon.svg',
+  },
+  {
+    name: 'Android Apps',
+    desc:`We're experts in Android app development, meticulously tailoring innovative solutions for your business's long-term success and growth.`,
+    icon:'/androidIcon.svg',
+  },
+  {
+    name: 'Cross Platform',
+    desc:'If needed, we can ensure the app functions seamlessly across all platforms, catering to your diverse user base with ease and efficiency.',
+    icon:'/crossPlatformIcon.svg',
+  },
+];
 
 export const services = [
   {
@@ -9,28 +75,28 @@ export const services = [
     description:
       'Crafting innovative mobile applications tailored to your needs. From iOS to Android, we bring your ideas to life on every platform.',
     icon: '/mobileServiceBG.svg',
-    url:'',
+    url:'/services/mobile-apps',
   },
   {
     name: 'Web Apps',
     description:
       'Building robust web applications that engage users and drive results. Our solutions are scalable, secure, and user-friendly.',
     icon: '/webServiceBG.svg',
-    url:'',
+    url:'/services/web-apps',
   },
   {
     name: 'Graphic Design',
     description:
       'Designing captivating visuals that communicate your brand message effectively. From logos to marketing materials, we make your brand stand out.',
     icon: 'graphicDesignBG.svg',
-    url:'',
+    url:'/services/graphic-design',
   },
   {
     name: 'Branding',
     description:
       'Creating unique brand identities that resonate with your audience. We develop comprehensive branding strategies to elevate your business.',
     icon: 'brandingBG.svg',
-    url:'',
+    url:'/services/branding',
   },
 ];
 

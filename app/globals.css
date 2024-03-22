@@ -112,3 +112,8 @@ canvas {
   .clipTop { 
     clip-path: ellipse(175% 50% at 50% 50%);
   }
+
+  .clipTop2 { 
+    clip-path: ellipse(105% 50% at 50% 50%);
+  }
+  
