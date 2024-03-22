@@ -2,6 +2,49 @@ import { aboutimage, aboutus, insylink,img5_ } from "../../public";
 import { FaLinkedin,FaTwitter,FaFacebook,FaInstagram } from "react-icons/fa";
 import { GoArrowUpRight } from "react-icons/go";
 
+export const extraFeatures = [
+  {
+    title:'UI/UX Design',
+    description:'Expertise in creating intuitive user interfaces to enhance user experience.',
+  },
+  {
+    title:'Prototyping and Wireframing',
+    description:'Visualization and design iteration before development.',
+  },
+  {
+    title:'Post deployment support',
+    description:'We provide support and maintenance to keep your application going strong.',
+  },
+  {
+    title:'Cross-Platform Development',
+    description:'Seamlessly working across multiple platforms for cost-effective solutions.',
+  },
+  {
+    title:'Backend Development/Integration',
+    description:'Building robust backend systems and integrating with apps for enhanced functionality.',
+  },
+  {
+    title:'Quality Assurance and Testing',
+    description:'Rigorous testing procedures ensuring performance and security across devices.',
+  },
+  {
+    title:'Custom Feature Development',
+    description:'Tailoring unique functionalities to meet specific business needs and objectives.',
+  },
+  {
+    title:'Consultation and Strategy',
+    description:'Guiding clients in defining app strategy and prioritizing features.',
+  },
+  {
+    title:'App Store Optimization (ASO)',
+    description:'Expertise in optimizing app listings for improved visibility and downloads.',
+  },
+  {
+    title:'Emerging Technologies',
+    description:'Leveraging AI, IoT, or blockchain for enhanced functionality.',
+  },
+]
+
 export const pricingPlans = [
   {
     price:'1200',

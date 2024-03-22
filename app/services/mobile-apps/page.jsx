@@ -8,9 +8,9 @@ import MobileAppSection from "../components/MobileAppSection";
 import Platforms from "../components/Platforms";
 import TheProcess from "../components/TheProcess";
 import Prices from "../components/Prices";
+import WhatElse from "../components/WhatElse";
 
 const MobileApps = () => {
-  const [activeLink, setActiveLink] = useState("Mobile Apps");
 
   useEffect(() => {
     const lenis = new Lenis();
@@ -19,60 +19,7 @@ const MobileApps = () => {
       lenis.raf(time);
       requestAnimationFrame(raf);
     }
-
     requestAnimationFrame(raf);
-  }, []);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const mobileAppsDiv = document.getElementById("mobile-apps");
-      const platformsDiv = document.getElementById("platforms");
-      const theProcessDiv = document.getElementById("the-process");
-      const pricesDiv = document.getElementById("prices");
-      const whatElseDiv = document.getElementById("what-else");
-      const contactDiv = document.getElementById("contact");
-
-      const scrollPosition = window.scrollY+100;
-      const mobileAppsOffset = mobileAppsDiv.offsetTop;
-      const platformsOffset = platformsDiv.offsetTop;
-      const theProcessOffset = theProcessDiv.offsetTop;
-      const pricesOffset = pricesDiv.offsetTop;
-      const whatElseOffset = whatElseDiv.offsetTop;
-      const contactOffset = contactDiv.offsetTop;
-
-      if (scrollPosition < platformsOffset) {
-        setActiveLink("Mobile Apps");
-      } else if (
-        scrollPosition >= platformsOffset &&
-        scrollPosition < theProcessOffset
-      ) {
-        setActiveLink("Platforms");
-      } else if (
-        scrollPosition >= theProcessOffset &&
-        scrollPosition < pricesOffset
-      ) {
-        setActiveLink("The process");
-      } else if (
-        scrollPosition >= pricesOffset &&
-        scrollPosition < whatElseOffset
-      ) {
-        setActiveLink("Prices");
-      } else if (
-        scrollPosition >= whatElseOffset &&
-        scrollPosition < contactOffset
-      ) {
-        setActiveLink("What else?");
-      } else if (scrollPosition >= contactOffset) {
-        setActiveLink("Contact");
-      } else {
-        setActiveLink("");
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
   }, []);
 
   return (
@@ -109,7 +56,9 @@ const MobileApps = () => {
       <div
         id="what-else"
         className="min-h-screen relative py-[50px] md:py-[100px] px-4 sm:px-8 md:px-12 lg:px-20 xl:px-40 2xl:px-[20rem]"
-      ></div>
+      >
+        <WhatElse />
+      </div>
       <div id="contact">
         <Contact />
       </div>

@@ -8,6 +8,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens:{
+        xxl:'1920px',
+      },
       fontFamily:{
         kodeMono: ["Kode-Mono", "monospace"],
         poppins: ['Poppins','sans-serif'],
