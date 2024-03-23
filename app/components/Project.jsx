@@ -36,7 +36,7 @@ const Project = ({project}) => {
             <BigButton url={project?.url} isBlack={true}>
                 View project
             </BigButton>
-            <hr className={`h-1 bg-gradient-to-r from-neutral-600/50 via-neutral-700/50 to-neutral-600/50 w-full ${project?.name=='Lans-Gr'&&'hidden'}`}/>
+            <hr className={`h-1 bg-gradient-to-r from-neutral-600/50 via-neutral-700/50 to-neutral-600/50 w-full ${project?.name=='Lans-Gr'&&'invisible'}`}/>
         </div>
     </div>
   )

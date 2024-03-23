@@ -12,17 +12,17 @@ const HeroPage = () => {
     tl.current = gsap.timeline({}).addLabel('start')
     
       gsap.set('.title', {
-        translateY: 100,
+        translateY: 75,
         scale:0.9,
         opacity: 0,
       })
       gsap.set('.subtitle', {
-        translateY: 100,
+        translateY: 75,
         scale:0.9,
         opacity: 0,
       })
       gsap.set('.button', {
-        translateY: 100,
+        translateY: 75,
         scale:0.9,
         opacity: 0,
       })
