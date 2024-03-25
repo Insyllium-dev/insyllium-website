@@ -94,6 +94,60 @@ export const sidebarLinks = [
   },
 ];
 
+export const graphicDesignLinks = [
+  {
+    name: 'Graphic Design',
+    url:'#graphic-design',
+  },
+  {
+    name: 'Platforms',
+    url:'#platforms',
+  },
+  {
+    name: 'The process',
+    url:'#the-process',
+  },
+  {
+    name: 'Prices',
+    url:'#prices',
+  },
+  {
+    name: 'What else?',
+    url:'#what-else',
+  },
+  {
+    name: 'Contact',
+    url:'#contact',
+  },
+];
+
+export const webSidebarLinks = [
+  {
+    name: 'Web Apps',
+    url:'#web-apps',
+  },
+  {
+    name: 'Platforms',
+    url:'#platforms',
+  },
+  {
+    name: 'The process',
+    url:'#the-process',
+  },
+  {
+    name: 'Prices',
+    url:'#prices',
+  },
+  {
+    name: 'What else?',
+    url:'#what-else',
+  },
+  {
+    name: 'Contact',
+    url:'#contact',
+  },
+];
+
 export const mobilePlatforms = [
   {
     name: 'iOS apps',
@@ -109,6 +163,43 @@ export const mobilePlatforms = [
     name: 'Cross Platform',
     desc:'If needed, we can ensure the app functions seamlessly across all platforms, catering to your diverse user base with ease and efficiency.',
     icon:'/crossPlatformIcon.svg',
+  },
+];
+
+export const graphicDesignServices = [
+  {
+    name: 'Logo Design',
+    desc:`Stand out from the crowd with a unique and memorable logo crafted by our expert designers. We'll translate your brand identity into a visual symbol that resonates with your audience.`,
+    icon:'/appleIcon.svg',
+  },
+  {
+    name: 'Branding Materials',
+    desc:`Build a cohesive brand identity across all touchpoints with our bespoke branding materials. From business cards to letterheads, we'll ensure consistency and professionalism in every design element.`,
+    icon:'/androidIcon.svg',
+  },
+  {
+    name: 'Digital Illustrations',
+    desc:'Capture attention and convey complex ideas with vibrant digital illustrations. Our talented artists will bring your concepts to life with creativity and precision, adding a unique flair to your projects.',
+    icon:'/crossPlatformIcon.svg',
+  },
+];
+
+
+export const webAppServices = [
+  {
+    name: 'Websites',
+    desc:'We can craft exceptional websites to seamlessly amplify your online presence and meet your business objectives effortlessly and elegantly.',
+    icon:'/websiteService.svg',
+  },
+  {
+    name: 'Web Apps',
+    desc:`We develop web apps to streamline processes, enhance user experiences, and propel your business forward with dynamic and innovative solutions."`,
+    icon:'/webappService.svg',
+  },
+  {
+    name: 'Desktop Apps',
+    desc:'Transform your desktop experience with our custom-built applications, designed to optimize workflow and cater to your specific needs.',
+    icon:'/desktopapps.svg',
   },
 ];
 

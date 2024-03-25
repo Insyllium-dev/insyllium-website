@@ -1,12 +1,11 @@
 import Image from "next/image"
-import { mobilePlatforms } from "../../utils/data"
 
-const Platforms = () => {
+const Platforms = ({mobilePlatforms,title,title2,description}) => {
   return (
     <div className="flex flex-col justify-between items-center">
         <div className="space-y-12 flex flex-col items-center">
-        <h1 className="font-semibold text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white text-center">App <span className="font-bold text-transparent bg-clip-text bg-gradient-to-br from-cyan-300/70 to-orange-300/80">Platforms</span></h1>
-        <p className="text-white font-normal text-lg max-w-2xl text-center"> These are the platforms we can develop apps for. Depending on your needs  we can move forward to turning your dream app into reality.</p>
+        <h1 className="font-semibold text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white text-center">{title} <span className="font-bold text-transparent bg-clip-text bg-gradient-to-br from-cyan-300/70 to-orange-300/80">{title2}</span></h1>
+        <p className="text-white font-normal text-lg max-w-2xl text-center"> {description}</p>
         <div className="flex items-center justify-center flex-wrap gap-12 py-[100px]">
             {mobilePlatforms?.map((platform,index)=>(
                 <Platform key={index} platform={platform} />

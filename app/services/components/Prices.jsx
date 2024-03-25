@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { pricingPlans } from "../../utils/data";
 
 const Prices = () => {
@@ -18,7 +19,7 @@ const Prices = () => {
             here to help you scale.
           </p>
         </div>
-        <div className="w-full h-max rounded-3xl bg-gradient-to-br from-cyan-300/60 to-orange-300/60 p-12 space-y-6 relative">
+        <div className="w-full h-[500px] rounded-3xl bg-gradient-to-br from-cyan-300/60 to-orange-300/60 p-12 space-y-6 relative flex flex-col justify-between">
           <div className="flex md:justify-start justify-center items-center flex-wrap gap-12 md:gap-0">
           {pricingPlans?.map((plan, index) => (
             <div key={index} className={`${index==2&&'hidden'} flex flex-col gap-2 w-full md:w-[33.3%]`}>
@@ -47,6 +48,7 @@ const Prices = () => {
                    </div>
                  ))}
               </div>
+              <Link href={'#contact'} className="text-neutral-200/90 font-poppins text-lg font-normal text-right">Book a call now</Link>
             </div>
           </div>
         <p className="text-neutral-800 font-medium font-poppins text-lg">Note: <span className="text-[#474E4B]/60">Anything added after agreement will be added on top of the initial price.</span></p>

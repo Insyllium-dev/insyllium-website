@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 const Sidebar = ({ links }) => {
-  const [activeLink, setActiveLink] = useState('Mobile Apps');
+  const [activeLink, setActiveLink] = useState(links[0]?.name);
 
   useEffect(() => {
     const handleScroll = () => {
