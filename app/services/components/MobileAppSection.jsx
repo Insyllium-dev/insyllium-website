@@ -59,7 +59,7 @@ const MobileAppSection = ({title,title2,description,subtitle,image}) => {
            </div>
         </div>
         <div className="w-full md:w-1/2">
-            <Image alt="Mobile app image" src={image} width={1920} height={1080} className="object-contain"/>
+            <Image alt="Mobile app image" src={image} width={1920} height={1080} className="object-contain md:scale-[1.2] lg:scale-[1.35]"/>
         </div>
     </div>
   )

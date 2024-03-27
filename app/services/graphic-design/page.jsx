@@ -1,7 +1,7 @@
 "use client";
 import { useEffect } from "react";
 import Sidebar from "../../components/Sidebar";
-import { graphicDesignLinks, graphicDesignServices } from "../../utils/data";
+import { gdProcessFeatures, graphicDesignLinks, graphicDesignServices } from "../../utils/data";
 import Lenis from "@studio-freight/lenis";
 import Contact from "../../components/ContactPage/Contact";
 import MobileAppSection from "../components/MobileAppSection";
@@ -31,7 +31,7 @@ const GraphicDesign = () => {
         className="min-h-screen flex items-center relative py-[50px] md:py-[100px] px-4 sm:px-8 md:px-12 lg:px-20 xl:px-40 2xl:px-[20rem]"
       >
         <div className="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#00b2d1_100%)]"></div>
-        <MobileAppSection title={'Graphic'} title2={'Design'} description={`Elevate your brand with stunning graphic design solutions. Our team specializes in creating visually captivating designs that leave a lasting impression. Whether it's logos, branding materials, or digital illustrations, we'll bring your vision to life with creativity and precision.`} subtitle={'Let\'s work together to craft designs that resonate with your audience and set your brand apart in a crowded digital landscape.'} image={'/webappsbg.png'} />
+        <MobileAppSection title={'Graphic'} title2={'Design'} description={`Boost your online presence with our top-notch web app development services. Our team will be your trusted companion from start to finish, offering expert guidance and insights into the latest industry trends.`} subtitle={`Let's collaborate to turn your ideas into a standout web app that's both functional and captivating.`} image={'/graphicdesignbg.png'} />
       </div>
       <div
         id="platforms"
@@ -45,7 +45,7 @@ const GraphicDesign = () => {
           id="the-process"
           className="min-h-screen relative py-[50px] md:py-[100px]"
         >
-          <TheProcess />
+          <TheProcess section={'graphic-design'} processFeatures={gdProcessFeatures}/>
         </div>
         <div
           id="prices"

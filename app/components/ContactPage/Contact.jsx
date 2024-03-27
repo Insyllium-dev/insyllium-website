@@ -13,6 +13,8 @@ const Contact = () => {
     setError(false);
     setSuccess(false);
 
+
+
     emailjs
       .sendForm(
         'service_1ehh4zw',
@@ -24,9 +26,15 @@ const Contact = () => {
         () => {
           setSuccess(true);
           form.current.reset();
+          setTimeout(() => {
+            setSuccess(false);
+          }, 10000);
         },
         () => {
           setError(true);
+          setTimeout(() => {
+            setError(false);
+          }, 10000);
         }
       );
   };
@@ -72,7 +80,7 @@ const Contact = () => {
               Something went wrong!
             </span>
           )}
-                    <button disabled={!accepted} className="font-poppins font-medium text-gray-200 text-lg border-b hover:text-[#00b2d1] hover:border-b-[#00b2d1] transition-colors duration-300" type="submit">Send</button>
+                    <button disabled={!accepted} className="font-poppins font-medium text-[#1a1a1a] text-lg bg-white py-2 px-10 rounded-full hover:bg-white/80  transition-colors duration-300" type="submit">Send</button>
             </div>
             </form>
 

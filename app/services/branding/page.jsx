@@ -1,7 +1,7 @@
 "use client";
 import { useEffect } from "react";
 import Sidebar from "../../components/Sidebar";
-import { waProcessFeatures, webAppServices, webSidebarLinks } from "../../utils/data";
+import { brandingServices, gdProcessFeatures, webSidebarLinks } from "../../utils/data";
 import Lenis from "@studio-freight/lenis";
 import Contact from "../../components/ContactPage/Contact";
 import MobileAppSection from "../components/MobileAppSection";
@@ -10,11 +10,10 @@ import TheProcess from "../components/TheProcess";
 import Prices from "../components/Prices";
 import WhatElse from "../components/WhatElse";
 
-const WebApps = () => {
-
+const Branding = () => {
   useEffect(() => {
     const lenis = new Lenis();
-    window.scrollTo(0,0)
+    window.scrollTo(0, 0);
 
     function raf(time) {
       lenis.raf(time);
@@ -31,26 +30,35 @@ const WebApps = () => {
         className="min-h-screen flex items-center relative py-[50px] md:py-[100px] px-4 sm:px-8 md:px-12 lg:px-20 xl:px-40 2xl:px-[20rem]"
       >
         <div className="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#00b2d1_100%)]"></div>
-        <MobileAppSection title={'Web'} title2={'Apps'} description={'Boost your online presence with our top-notch web app development services. Our team will be your trusted companion from start to finish, offering expert guidance and insights into the latest industry trends.'} subtitle={`Let's collaborate to turn your ideas into a standout web app that's both functional and captivating.`} image={'/webappsbg.png'}/>
+        <MobileAppSection
+          title={"Branding"}
+          title2={"Services"}
+          description={`Elevate your brand's online presence with our branding services. Our team is poised to be your trusted partner every step of the way, providing expert guidance and staying abreast of the latest industry trends.`}
+          subtitle={`Let's craft a compelling brand narrative and visual identity that captivates and sets you apart.`}
+          image={"/brandingBG.png"}
+        />
       </div>
       <div
         id="platforms"
         className="relative py-[50px] md:py-[100px] px-4 sm:px-8 md:px-12 lg:px-20 xl:px-40 2xl:px-[20rem]"
       >
-        <Platforms mobilePlatforms={webAppServices} title={""} title2={"Services"} description={'These are the platforms we can develop apps for. Depending on your needs  we can move forward to turning your dream app into reality.'}/>
+        <Platforms
+          mobilePlatforms={brandingServices}
+          title={""}
+          title2={"Services"}
+          description={
+            "These are the platforms we can develop apps for. Depending on your needs  we can move forward to turning your dream app into reality."
+          }
+        />
       </div>
       <div className="clipTop w-full bg-white relative">
-
         <div
           id="the-process"
           className="min-h-screen relative py-[50px] md:py-[100px]"
         >
-          <TheProcess section={''} processFeatures={waProcessFeatures}/>
+          <TheProcess section={'branding'} processFeatures={gdProcessFeatures}/>
         </div>
-        <div
-          id="prices"
-          className="min-h-screen relative"
-        >
+        <div id="prices" className="min-h-screen relative">
           <Prices />
         </div>
       </div>
@@ -67,4 +75,4 @@ const WebApps = () => {
   );
 };
 
-export default WebApps;
+export default Branding;

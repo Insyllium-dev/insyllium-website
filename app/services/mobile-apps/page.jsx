@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import Sidebar from "../../components/Sidebar";
-import { sidebarLinks } from "../../utils/data";
+import { maProcessFeatures, sidebarLinks } from "../../utils/data";
 import Lenis from "@studio-freight/lenis";
 import Contact from "../../components/ContactPage/Contact";
 import MobileAppSection from "../components/MobileAppSection";
@@ -47,7 +47,7 @@ const MobileApps = () => {
           id="the-process"
           className="min-h-screen relative py-[50px] md:py-[100px]"
         >
-          <TheProcess />
+          <TheProcess section={''} processFeatures={maProcessFeatures}/>
         </div>
         <div
           id="prices"

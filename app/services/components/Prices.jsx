@@ -3,7 +3,7 @@ import { pricingPlans } from "../../utils/data";
 
 const Prices = () => {
   return (
-    <div className="min-h-screen w-full relative py-[100px]">
+    <div className="min-h-screen w-full relative py-[100px] pb-[200px]">
       <div className="absolute inset-0 -z-10 h-full w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:32px_32px]"></div>
 
       <div className="flex flex-col justify-between items-start px-4 sm:px-8 md:px-12 lg:px-20 xl:px-40 2xl:px-[20rem] gap-16">
@@ -19,7 +19,7 @@ const Prices = () => {
             here to help you scale.
           </p>
         </div>
-        <div className="w-full h-[500px] rounded-3xl bg-gradient-to-br from-cyan-300/60 to-orange-300/60 p-12 space-y-6 relative flex flex-col justify-between">
+        <div className="w-full h-max xl:h-[500px] rounded-3xl bg-gradient-to-br from-cyan-300/60 to-orange-300/60 p-12 space-y-6 relative flex flex-col justify-between">
           <div className="flex md:justify-start justify-center items-center flex-wrap gap-12 md:gap-0">
           {pricingPlans?.map((plan, index) => (
             <div key={index} className={`${index==2&&'hidden'} flex flex-col gap-2 w-full md:w-[33.3%]`}>

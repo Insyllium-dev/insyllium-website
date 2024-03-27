@@ -21,7 +21,7 @@ export default Platforms
 const Platform = ({platform}) => {
     
     return (
-        <div className="h-max w-80 rounded-3xl relative py-6 px-4 group border-2">
+        <div className="h-max min-h-[375px] w-80 rounded-3xl relative py-6 px-4 group border-2">
             <Image src={platform?.icon} className="absolute -top-[13%] left-1/2 -translate-x-1/2 object-fill h-[80px] w-[80px]" width={80} height={80}/>
             <div className="flex flex-col gap-10 pt-14 p-4 items-center">
                 <p className="font-semibold group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-br from-cyan-300/70 to-orange-300/80 text-white text-xl font-poppins text-center">{platform?.name}</p>

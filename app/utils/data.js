@@ -2,6 +2,62 @@ import { aboutimage, aboutus, insylink,img5_ } from "../../public";
 import { FaLinkedin,FaTwitter,FaFacebook,FaInstagram } from "react-icons/fa";
 import { GoArrowUpRight } from "react-icons/go";
 
+export const gdProcessFeatures = [
+  {
+    title:'Evaluation',
+    description:'Gather feedback from clients, stakeholders, and end-users to evaluate the effectiveness of the designs.',
+  },
+  {
+    title:'Iteration',
+    description:'Iterate on designs based on feedback and insights, optimising for better results',
+  },
+  {
+    title:'Trends',
+    description:'Stay updated on design trends and emerging technologies to ensure designs remain impactful.',
+  },
+  {
+    title:'Feedback',
+    description:'Gather feedback from clients, stakeholders to evaluate the effectiveness of the designs.',
+  },
+]
+export const maProcessFeatures = [
+  {
+    title:'Finalization',
+    description:'Implement final designs across various mediums, including digital platforms and print materials.',
+  },
+  {
+    title:'Consistency',
+    description:'Ensure consistency in design elements and branding across all deliverables.',
+  },
+  {
+    title:'Printing',
+    description:'Collaborate with developers, printers, and other stakeholders to bring designs to life.',
+  },
+  {
+    title:'Coordination & Delivery',
+    description:'Coordinate with vendors and suppliers to source materials and ensure timely production and delivery of print materials.',
+  },
+]
+export const waProcessFeatures = [
+  {
+    title:'Ensuring Quality',
+    description:'Develop and execute comprehensive test cases to ensure software quality.',
+  },
+  {
+    title:'Component Validation',
+    description:'Perform unit testing to validate individual components.',
+  },
+  {
+    title:'Integration Testing',
+    description:'Conduct integration testing to verify the interaction between modules.',
+  },
+  {
+    title:'Bug Fixes',
+    description:'Identifying bugs and making sure they are fixed prior to deployment',
+  },
+]
+
+
 export const extraFeatures = [
   {
     title:'UI/UX Design',
@@ -168,19 +224,37 @@ export const mobilePlatforms = [
 
 export const graphicDesignServices = [
   {
+    name: 'Web Design',
+    desc:`Creating attractive websites that reflect the brand is crucial in marketing. Well-designed websites act as digital brand ambassadors.`,
+    icon:'/webdesignIcon.svg',
+  },
+  {
+    name: 'Marketing',
+    desc:`Crafting brand-aligned social media content is vitally important for effective marketing. Profiles represent the brand's essence.`,
+    icon:'/marketingIcon.svg',
+  },
+  {
+    name: 'Print Design',
+    desc:`Designing various printed materials such as brochures, business cards, posters, etc., to maintain brand consistency and communicate effectively.`,
+    icon:'/printdesignIcon.svg',
+  },
+];
+
+export const brandingServices = [
+  {
+    name: 'Brand Strategy',
+    desc:`Developing a detailed plan to establish or enhance a brand's identity, positioning, and messaging to resonate with the target audience.`,
+    icon:'/brandstrategyIcon.svg',
+  },
+  {
+    name: 'Brand Identity',
+    desc:`Creating visual elements such as logos, color palettes, typography, and imagery to represent the brand's personality and differentiate it from competitors.`,
+    icon:'/brandidentityIcon.svg',
+  },
+  {
     name: 'Logo Design',
-    desc:`Stand out from the crowd with a unique and memorable logo crafted by our expert designers. We'll translate your brand identity into a visual symbol that resonates with your audience.`,
-    icon:'/appleIcon.svg',
-  },
-  {
-    name: 'Branding Materials',
-    desc:`Build a cohesive brand identity across all touchpoints with our bespoke branding materials. From business cards to letterheads, we'll ensure consistency and professionalism in every design element.`,
-    icon:'/androidIcon.svg',
-  },
-  {
-    name: 'Digital Illustrations',
-    desc:'Capture attention and convey complex ideas with vibrant digital illustrations. Our talented artists will bring your concepts to life with creativity and precision, adding a unique flair to your projects.',
-    icon:'/crossPlatformIcon.svg',
+    desc:`Creating unique and memorable visual representations of a brand through innovative, captivating logos that resonate with audiences.`,
+    icon:'/logodesignIcon.svg',
   },
 ];
 
