@@ -6,7 +6,7 @@ const processes2 = ['Discovery and understanding','Ideation and brainstorming','
 
 const TheProcess = ({section,processFeatures}) => {
   return (
-    <div className="min-h-screen  w-full relative py-[50px] md:py-[100px]">
+    <div className="min-h-screen w-full relative py-[50px] md:py-[100px]">
       <div className="absolute inset-0 -z-10 h-full w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:32px_32px]"></div>
 
       <div className="flex flex-col justify-between items-center px-4 sm:px-8 md:px-12 lg:px-20 xl:px-40 2xl:px-[20rem] gap-20">
@@ -95,7 +95,7 @@ const TheProcess = ({section,processFeatures}) => {
       </div>
         )
        }
-        <div className="grid grid-cols-1 md:grid-cols-2 place-content-between gap-12 pt-80">
+        <div className="grid grid-cols-1 md:grid-cols-2 place-content-between gap-12 md:pt-80">
             {processFeatures?.map((feature,index)=>(
               <div key={index} className="flex items-baseline gap-4 justify">
                   <div className={`rounded-full h-4 w-4 min-w-4 min-h-4 ${index%2==0?'bg-cyan-400':'bg-orange-400'}`}/>

@@ -42,7 +42,6 @@ const MobileApps = () => {
         <Platforms mobilePlatforms={mobilePlatforms} title={'App'} title2={'Platforms'} description={'These are the platforms we can develop apps for. Depending on your needs  we can move forward to turning your dream app into reality.'}/>
       </div>
       <div className="clipTop w-full bg-white relative">
-
         <div
           id="the-process"
           className="min-h-screen relative py-[50px] md:py-[100px]"

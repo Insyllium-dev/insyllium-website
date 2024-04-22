@@ -38,12 +38,12 @@ const Footer = () => {
             </h4>
             <ul className="list-none mt-4">
               <li
-                className={`font-poppins font-normal text-[16px] leading-[24px] text-gray-100 hover:text-secondary cursor-pointer mb-3`}
+                className={`font-poppins font-normal text-[16px] leading-[24px] text-gray-100 hover:text-[#00b2d1] cursor-pointer mb-3`}
               >
-                <Link href={`mailto:insyllium@gmail.com`}>insyllium@gmail.com</Link>
+                <Link href={`mailto:contact@insyllium.com`}>contact@insyllium.com</Link>
               </li>
               <li
-                className={`font-poppins font-normal text-[16px] leading-[24px] text-gray-100 hover:text-secondary cursor-pointer`}
+                className={`font-poppins font-normal text-[16px] leading-[24px] text-gray-100 hover:text-[#00b2d1] cursor-pointer`}
               >
                 <Link href={`tel:+38971604221`}>+389 71 604 221</Link>
               </li>
@@ -61,11 +61,11 @@ const Footer = () => {
                 {footerLink.links.map((link, index) => (
                   <li
                     key={link.name}
-                    className={`font-poppins font-normal text-[16px] leading-[24px] text-gray-100 hover:text-secondary cursor-pointer ${
+                    className={`font-poppins font-normal text-[16px] leading-[24px] text-gray-100 hover:text-[#00b2d1] cursor-pointer ${
                       index !== footerLink.links.length - 1 ? "mb-3" : "mb-0"
                     }`}
                   >
-                    <Link href={`/${link.link}`}>{link.name}</Link>
+                    <Link href={`${link.link}`}>{link.name}</Link>
                   </li>
                 ))}
               </ul>

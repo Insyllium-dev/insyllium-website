@@ -20,6 +20,7 @@ export const gdProcessFeatures = [
     description:'Gather feedback from clients, stakeholders to evaluate the effectiveness of the designs.',
   },
 ]
+
 export const maProcessFeatures = [
   {
     title:'Finalization',
@@ -450,35 +451,38 @@ export const socialMedia = [
     },
   ];
 
-  
 export const footerLinks = [
     {
       title: "Services",
       links: [
         {
-          name: "Software Development",
-          link: "software-development",
+          name: "Mobile Apps",
+          link: "/services/mobile-apps",
+        },
+        {
+          name: "Web Apps",
+          link: "services/web-apps",
         },
         {
           name: "Graphic Design",
-          link: "graphic-design",
+          link: "/services/graphic-design",
         },
         {
-          name: "AI Applications",
-          link: "ai-applications",
+          name: "Branding",
+          link: "/services/branding",
         },
       ],
     },
     {
-      title: "Partner",
+      title: "Legal",
       links: [
         {
-          name: "Our Partner",
-          link: "https://www.hoobank.com/our-partner/",
+          name: "Privacy Policy",
+          link: "/privacy-policy",
         },
         {
-          name: "Become a Partner",
-          link: "https://www.hoobank.com/become-a-partner/",
+          name: "Terms of Service",
+          link: "/terms-of-service",
         },
       ],
     },

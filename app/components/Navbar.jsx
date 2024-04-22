@@ -147,7 +147,7 @@ const Navbar = () => {
               </div>
               <div className="flex flex-col gap-1 items-end">
                 <Link href={"tel:+38971604221"} className="text-white text-base md:text-lg lg:text-xl font-poppins uppercase font-normal">+389 71 604 221</Link>
-                <Link href="mailto:info@insyllium.com" className="text-white text-base md:text-lg lg:text-xl font-poppins uppercase font-normal">info@insyllium.com</Link>
+                <Link href="mailto:contact@insyllium.com" className="text-white text-base md:text-lg lg:text-xl font-poppins uppercase font-normal">contact@insyllium.com</Link>
               </div>
           </div>
         </div>
