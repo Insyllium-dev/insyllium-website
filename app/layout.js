@@ -2,6 +2,8 @@ import { Open_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/react"
 
 const OpenSans = Open_Sans({
   weight: ['400', '700'],
@@ -18,6 +20,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Analytics />
+      <SpeedInsights />
       <body className={`${OpenSans.className} bg-neutral-900`}>
         <div>
           <Navbar />
