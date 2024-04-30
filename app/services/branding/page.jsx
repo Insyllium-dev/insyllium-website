@@ -1,4 +1,4 @@
-import BrandingHero from "./brandinghero";
+import BrandingHero from "./BrandingHero";
 
 export const metadata = {
   title: "Insyllium | Branding",
