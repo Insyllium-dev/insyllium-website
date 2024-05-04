@@ -35,6 +35,7 @@ const Footer = () => {
           <div className="flex flex-col ss:my-0 my-4 min-w-[150px]">
             <h4 className="font-poppins font-medium text-[20px] leading-[27px] text-white">
               Reach Us
+              
             </h4>
             <ul className="list-none mt-4">
               <li
