@@ -35,7 +35,6 @@ const Footer = () => {
           <div className="flex flex-col ss:my-0 my-4 min-w-[150px]">
             <h4 className="font-poppins font-medium text-[20px] leading-[27px] text-white">
               Reach Us
-              
             </h4>
             <ul className="list-none mt-4">
               <li
@@ -74,9 +73,6 @@ const Footer = () => {
           ))}
         </div>
       </div>
-      {/* <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
-      <div className="absolute z-[0] w-[30%] h-[30%] rounded-full bottom-40 white__gradient" />
-      <div className="absolute z-[0] w-[100%] h-[40%] bottom-[100px] blue__gradient" /> */}
 
       <div className="w-full flex justify-between items-center md:flex-row flex-col pt-6 border-t-[1px] border-t-[#3f3e45]">
         <p className="font-poppins font-normal text-[18px] text-center leading-[27px] text-white">
