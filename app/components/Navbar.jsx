@@ -160,6 +160,7 @@ const Navbar = () => {
           src={scrolledWhite&&!isOpen?darklogo:whitelogo}
           height={30}
           width={"auto"}
+          priority
         />
         </Link>
         <div className="items-center gap-4 hidden md:flex ">
